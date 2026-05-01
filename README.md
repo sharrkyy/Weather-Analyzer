@@ -1,23 +1,16 @@
-# Weather Analyzer 🌦️
+# Weather Analyzer
 
-A simple Python project that analyzes weather data from a CSV file and provides:
-- Summary statistics
-- Key highlights (max/min values with dates)
-- Visualizations (line, bar, scatter, pie charts)
+## 🔀 Version Comparison
 
-## Features
-1. Display summary statistics
-2. Plot Temperature trend
-3. Plot Humidity trend
-4. Scatter plot of Humidity vs AQI
-5. Pie chart of Rainfall Probability
-6. Exit option
+### 🟢 Version 1
+- 🔁 Controlled by a single **while True loop**.
+- 📑 Menu choices handled with **if/elif statements** (1, 2, 3, etc.).
+- 📊 Summary and visualization logic triggered directly inside the loop.
+- 🖥️ All functionality lived together in one place.
 
-## Requirements
-- Python 3.x
-- pandas
-- matplotlib
-
-Install dependencies:
-```bash
-pip install pandas matplotlib
+### 🔵 Version 2
+- 🔄 Menu replay uses **recursion** (no loops).
+- 📑 Menu choices handled with **dictionary dispatch** (no long if/elif chains).
+- 🧩 Modular design: separate classes for Summary, Temperature, Humidity, Scatter, Rainfall.
+- 📝 Summary values extracted directly from the dataframe (manual filtering).
+- 😎 Casual error and exit messages add personality.
